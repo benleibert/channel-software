@@ -1,0 +1,10 @@
+Date de péremption  --> OK
+Mise à jour des prix ajouter prix district  --> OK
+
+Revoir la validation des transfert
+Les prix de vente ou transfert District --> CSPS
+Mettre case à cocher + formulaire des prix CSPS --> CSPS
+
+
+
+

@@ -1,0 +1,2083 @@
+/* -- Home page styles  -- */
+.bgcol{
+	background-color:#E2E2E2;
+}
+
+.Style2{
+	font-size:14px;
+}
+#errmsg{
+	margin:2px;
+	padding-left:10px;
+	color:#F00;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+	border-left:10px solid #FC0;
+}
+.homeLoginPage {
+	margin-top:50px;
+	height:478px; width:637px; background:url(../images/bg_login.jpg) no-repeat; 
+	border:1px solid #066
+}
+
+.homeLoginPagep {
+	margin-top:50px;
+	height:424px; width:712px; background:url(../images/bg_login_p.jpg) no-repeat; 
+	border:1px solid #066
+}
+
+.nounderline{
+	text-decoration:none;
+}
+#formPosition{
+	margin-top:180px;
+	margin-left:15px;
+	margin-right:15px;
+	text-align:left;
+}
+
+
+
+.homeheader {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000000
+}
+.homtTextBold {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 0.70pc;
+    font-weight: bold;
+    text-decoration: none;
+    color:#F90;
+}
+.login_table {
+	background-color: #CCCC99;
+	border: 1px solid #006666;
+}
+.homeCenter {
+	background-color: #F0F6E1;
+	background-image: url(homeBg00.gif);
+	background-repeat: repeat-y;
+	margin: 0px;
+	padding: 0px;
+	border: 1px solid #006666;
+}
+.errorText {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #FFD972;
+    font-weight: bold;
+}
+.homeBg {
+	background-color: #FFFFFF;
+	margin: 0px;
+	padding: 0px;
+}
+.homeText {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 0.70pc;
+    font-weight: bold;	
+	text-decoration: none;
+	color: #ffffff;
+}
+.bulletText {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 0.75pc;
+    color: #000000
+}
+.homeLine {
+    background-color: #006666;
+}
+.signIn {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.95pc;
+	font-weight: bold;
+	color: #FBFBFB;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+	border-bottom-width: 1px;
+	margin: 2px;
+}
+.loginButton {
+	BORDER-RIGHT: 1px solid #0E1D2C;
+	BORDER-TOP: 1px solid #989898;
+	FONT-SIZE: 12px;
+	BACKGROUND: #006666;
+	BORDER-LEFT: 1px solid #FFFFCC;
+	CURSOR: hand;
+	BORDER-BOTTOM: 1px solid #38434F;
+	HEIGHT: 22px;
+	color: #FFF;
+	TEXT-DECORATION: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+.loginTextfield {
+    border: 1px #7B94CE solid;
+    font-size: 12px;
+    background-color: #FFFFFF;
+    width: 140px;
+	HEIGHT: 18px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+/* --end -- */
+.bgNone {
+	margin: 0px;
+	padding: 0px;
+}
+.bodyBg {
+	background-image: url(bodybg00.gif);
+	background-repeat: repeat-y;
+    margin: 0px;
+    padding: 0px;
+}
+.bodyBg2 {
+    margin: 0px;
+    padding: 0px;
+}
+.supportbodyBg {
+    margin: 0px;
+    padding: 0px;
+}
+
+.darkgrey {
+    background-color: #EBEBEB;
+}
+.lightGrey {
+    background-color: #F5F5F5;
+}
+.noData {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 0.85pc;
+	color: #000000;
+	font-weight: bold;
+}
+.select {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-decoration: none;
+	color: #000000;
+	width: 150px;
+	background-color: #F8F8F8;
+}
+
+.selectFile {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-decoration: none;
+	color: #000000;
+	width: 250px;
+	background-color: #F8F8F8;
+}
+
+.selectAP {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-decoration: underline;
+	color: #0000FF;
+	width: 150px;
+	background-color: #F8F8F8;
+}
+.select1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-decoration: none;
+	color: #000000;
+	width: 160px;
+	background-color: #F8F8F8;
+}
+.selectSmall {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-decoration: none;
+	color: #000000;
+	width: 100px;
+	background-color: #F8F8F8;
+}
+.selectVerySmall {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-decoration: none;
+	color: #000000;
+	width: 60px;
+	background-color: #F8F8F8;
+}
+
+.list {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-decoration: none;
+	color: #000000;
+	width: 150px;
+	background-color: #F2F2F2;
+}
+.buttonDisabled {
+    BORDER-RIGHT: #4E638B 1px solid;
+    BORDER-TOP: #E7EFFF 1px solid;
+    FONT-SIZE: 10px;
+    BACKGROUND-COLOR: #DFE1E6;
+    BORDER-LEFT: #E7EFFF 1px solid;
+    BORDER-BOTTOM: #4E638B 1px solid;
+    HEIGHT: 18px;
+    TEXT-DECORATION: none
+}
+.formStyle {
+    border: 1px #7B94CE solid;
+    font-size: 11px;
+    background-color: #FFFFFF;
+    width: 250px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+select{
+}
+.formStyleFree {
+    border: 1px #7B94CE solid;
+    font-size: 11px;
+    background-color: #FFFFFF;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.formStyleSmall {
+    border: 1px #7B94CE solid;
+    font-size: 11px;
+    background-color: #FFFFFF;
+    width: 120px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.smallformStyle {
+    border: 1px #7B94CE solid;
+    font-size: 11px;
+    background-color: #FFFFFF;
+    width: 40px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.smallformStyleDisabled {
+    border: 1px #7B94CE solid;
+    font-size: 11px;
+    background-color: #E8E8E6;
+    width: 88px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.mediumformStyle {
+    border: 1px #7B94CE solid;
+    font-size: 11px;
+    background-color: #FFFFFF;
+    width: 88px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.textArea {
+	border: 1px #7B94CE solid;
+	font-size: 10px;
+	background-color: #FFFFFF;
+	width: 145px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	height: 26px;
+}
+.textAreaNormal {
+	border: 1px #7B94CE solid;
+	font-size: 10px;
+	background-color: #FFFFFF;
+	width: 180px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	height: 50px;
+	color: #000000;
+}
+.simpleSearch {
+    border: 1px #7B94CE solid;
+    font-size: 9px;
+    background-color: #FFFFFF;
+    width: 110px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.formStyleDisabled {
+    border: 1px #B2BED6 solid;
+    font-size: 11px;
+    background-color: #E8E8E6;
+    width: 150px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.formStyleDisabledText {
+    border: 1px #7B94CE solid;
+    font-size: 11px;
+    width: 150px;
+    color: #A6A6A6;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.mandatory {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10x;
+	text-decoration: none;
+	color: #FF0000;
+}
+.headerLeft {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.95pc;
+	color: #000000;
+	letter-spacing: 0.05em;
+	font-weight: bold;
+}
+.label {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	text-align: right;
+/*    font-weight: bold;*/
+	text-indent: 10 pt;
+}
+.text {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #000000;
+}
+.EtatText {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #000000;
+}
+.txtGlobal {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #000000;
+}
+
+.disabledText {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+	color: #A6A6A6
+}
+.boldText {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000000
+}
+.successText {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000000
+}
+.failureText {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000000;
+}
+
+.LicensefailText {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    color: red;
+}
+
+.boldTextGrey {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #666666
+}
+.tdRuled {
+		border-top: 3px solid #F9F9F0;
+		border-bottom: 3px solid #F9F9F0;
+		border-right: 30px solid #F9F9F0;
+}
+
+.helpTexts {
+	position: absolute;
+	top: -1000px;
+	left: -1000px;
+	#border: 1px solid #000;
+	#background: #FFFFE1;
+	#padding: 2;
+	font-family: Verdana, Arial, Helvetica, San-serif;
+	font-size: 11px;
+	z-index: 10;
+}
+
+.tooltip {
+	position: absolute;
+	top: -1000px;
+	left: -1000px;
+	font-family: Verdana, Arial, Helvetica, San-serif;
+	font-size: 11px;
+	z-index: 10;
+}
+.style1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #0000D9;
+}
+
+/* Status messages */
+.success {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	padding: 5px 5px 4px;
+	top margin: 5px;
+	background-color: #66CC66;
+	text-align: center;
+	background-position: center;
+	font-weight: bold;
+	vertical-align: bottom;
+}
+.successMsg {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #000000;
+        padding: 5px 5px 4px;
+        top margin: 5px;
+        text-align: center;
+        background-position: center;
+        font-weight: bold;
+        vertical-align: bottom;
+}
+
+.failure {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    PADDING-RIGHT: 5px;
+    PADDING-LEFT: 5px;
+    PADDING-BOTTOM: 1px;
+    PADDING-TOP: 0px;
+	font-size: 12px;
+	color: #000000;
+	top margin: 5px;
+	background-color: #FF8282;
+	text-align: center;
+	background-position: center;
+	font-weight: bold;
+	vertical-align: bottom;
+}
+.hide {
+	display: none;
+}
+.unhide {
+	display: block;
+}
+.noData {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 0.85pc;
+	color: #666666;
+	font-weight: bold;
+}
+.onText {
+	color: #000000;
+	text-decoration: none;
+}
+.offText {
+	color: #666666;
+}
+table#border td {
+	border-bottom:1px solid #F1EFEF;
+}
+/* Styles used for Reports left links - Expand & Collapse */
+#wireless .slideON {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: lighter;
+	color: #000000;
+	background-color: #FBFBF4;
+}
+#wireless .slideOFF {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: lighter;
+	color: #000000;
+	background-color: #FBFBF4;
+}
+a:visited {
+	color: #000000;
+}
+a:hover {
+	color: #FF0000;
+}
+a:link {
+	color: #000000;
+}
+.white{
+	font-size: 10px;
+    	color: #FFFFFF
+}
+
+span.wtext a:link, span.wtext a:visited{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    text-decoration: none;
+color: #FFFFFF
+
+}
+span.wtext a:hover{
+    text-decoration: underline;
+} 
+/* green */
+.progressBarClearStateBorder{
+	border: 1px solid #008300;
+}
+/* green */
+.progressBarClearStateBGColor{    
+    background-color: #00FF00;
+}
+/*coral -- red*/
+.progressBarCriticalStateBorder{
+	border: 1px solid #FF7F50;
+}
+/*lightsalmon -- red*/
+.progressBarCriticalStateBGColor{    
+    background-color: #FFA07A;
+}
+
+/*
+.progressBarClearStateBGColor{    
+    background-color: #DEEEDE;
+}
+*/
+.txtboldline {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	background-color: #F7F7EC;
+	font-weight: bold;
+	text-decoration: underline;
+}
+.txtboldline2 {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	font-weight: normal;
+	text-decoration: underline;
+}
+.popupgbg {
+	background-color: #006666;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #FFFFFF;
+}
+.popupgbg2 {
+
+	background-color: #CCCC99;
+}
+.popupgbdr {
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #9F9F68;
+	border-bottom-color: #9F9F68;
+	border-left-color: #9F9F68;
+
+}
+.popupgbg3 {
+	background-color: #F7F7EC;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	padding-left: 15px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #FFFFFF;
+
+
+}
+.popupgbg4 {
+	background-color: #F0F0E1;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	padding-left: 15px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #FFFFFF;
+	height: 25px;
+
+}
+.poptxtbox {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	border: 1px solid #7B94CE;
+}
+.txtbold2 {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	font-weight: bold;
+	text-decoration: underline;
+}
+.txtbox2 {
+
+    border: 1px #7B94CE solid;
+    font-size: 11px;
+    background-color: #FFFFFF;
+    width: 150px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.thikbg {
+	background-color: #E3E3C9;
+	padding-left: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+        border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #FFFFFF;
+        height: 25px;
+}
+.thikbg1{
+	background-color: #E3E3C9;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+        border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #FFFFFF;
+        height: 25px;
+}
+
+.linklitile {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+        color: #666666;
+	text-decoration: underline;
+
+}
+.nortxt {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+}
+.txtbox3 {
+    border: 1px #7B94CE solid;
+    font-size: 11px;
+    background-color: #FFFFFF;
+    width: 112px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.gridBox {
+	margin: 0;			/* Remove body margin/padding */
+	padding: 0;
+	overflow: auto;	/* Remove scroll bars on browser window */	
+	font: 12px "Lucida Grande", "Lucida Sans Unicode", Tahoma, Verdana;
+}
+#list9 {
+
+}
+
+
+/*--------------- Tab -------------------------------------------------------------------------- */
+/* Neutral styles */
+/* Navigation styles used in Tab Component */
+
+.ligne {
+    BORDER-BOTTOM: #889 1px solid;
+}
+.ligneAll {
+    BORDER: #7F9DB9 1px solid;
+	width: 250px;
+	height: 18px;
+}
+.ligneAll1 {
+    BORDER: #7F9DB9 1px solid;
+	width: 75px;
+	height: 18px;
+}
+.ligneANO {
+    BORDER: #7F9DB9 0px solid;
+	width: 75px;
+	height: 18px;
+}
+
+.tabsBg {
+    background-image: url(tabsBg00.gif);
+	background-repeat: repeat-x;	
+    margin: 0px;
+    padding: 0px;
+}
+#tab .menuOnBg {
+	BORDER-RIGHT: #333 1px solid; PADDING-RIGHT: 10px; 
+	/*BORDER-TOP: #fff 1px solid; */
+	PADDING-LEFT: 10px; PADDING-BOTTOM: 3px; 
+	BORDER-LEFT: #fff 1px solid; PADDING-TOP: 3px; HEIGHT: 18px; 				BACKGROUND-COLOR: #cc9; 
+	TEXT-ALIGN: center; text-decoration: none; font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: bold;
+	 border:none;
+}
+#tab .menuOffBg {
+	 PADDING-RIGHT: 10px; 
+	 PADDING-LEFT: 10px; 
+	 PADDING-BOTTOM: 3px; 
+	 PADDING-TOP: 3px; 
+	 /*BORDER-BOTTOM: #fff 1px solid; */
+	 HEIGHT: 18px; TEXT-ALIGN: center;
+	 font-family: Arial, Helvetica, sans-serif; font-size: 11px;font-weight: bold;
+	  border:none;
+}
+#tab .menuOn:hover {
+	/*TEXT-DECORATION: underline*/
+}
+#tab .menuOff:hover {
+	/*TEXT-DECORATION: underline*/
+}
+#tab .menuOff {
+    color:white;
+    TEXT-DECORATION:none;
+	border:none;
+}
+
+#subtab .menuOnBg {
+   PADDING-RIGHT: 20px;
+   PADDING-LEFT: 20px;
+   PADDING-BOTTOM: 3px;
+   PADDING-TOP: 3px; HEIGHT: 18px;
+   BACKGROUND-COLOR: #006666;
+   TEXT-ALIGN: center;
+   text-decoration: none;
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   font-size: 11px;
+   font-weight: bold;
+   color:#fff;
+}
+#subtab .menuOffBg {
+   PADDING-RIGHT: 20px;
+   PADDING-LEFT: 20px;
+   PADDING-BOTTOM: 3px;
+   PADDING-TOP: 3px;
+   HEIGHT: 18px;
+   TEXT-ALIGN: center;
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   font-size: 11px;
+   font-weight: bold;
+   color:#000;
+}
+
+
+#subtab .menuOn:hover {
+   TEXT-DECORATION: underline
+}
+#subtab .menuOff:hover {
+   TEXT-DECORATION: underline
+}
+#subtab .menuOn {
+   color:white;
+   TEXT-DECORATION:none  
+} 
+
+
+.searchBeg {
+    background-image: url(searchBe.gif);
+    margin: 0px;
+    padding: 0px;
+}
+.searchBg {
+    background-color: #CCCC99;
+}
+/* Styles for diff' Bg Colors */
+.header2Bg {    
+    background-color: #E7E7CF;
+}
+.tableHeader {
+    /*background-color: #EEEECE;*/
+ 	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+  	font-weight: bold;
+	border-bottom-color: #91A0B2;
+	background-position: center; 
+	padding-left: 3px;
+	height: 20px; 
+    color: #000000;
+}
+
+.hLine {
+    background-color: #709933;
+}
+.orangeLine {
+    background-color: #CCCC99;
+}
+.blueLine {
+    background-color: #CCCC99;
+}
+.thresholdSelection {
+    background-color: #F8FCEC;
+}
+/* Styles for Reports */
+.reportsHeaderBg {
+	background-color: #E7E7CF;
+}
+.reportsHeader {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000000
+}
+.reportsOddRow {
+	background-color: #F7F7EC;
+	padding: 4px;
+}
+.reportsEvenRow {
+	background-color: #F0F0E1;
+	padding: 4px;
+}
+.reportsBorder {
+	margin: 1px;
+	padding: 1px;
+	border: 1px solid #C1E395;
+}
+.progressTable {
+	background-image:  url(progress.gif);
+	background-repeat: no-repeat;
+}
+
+/* Styles used for Form Elements */
+.button {
+	FONT-SIZE: 10px;
+/*	font-weight: bold; */
+	BACKGROUND: #006666;
+	BORDER-LEFT: 1px solid #D9E4F8;
+	BORDER-RIGHT: 1px solid #0E1D2C;
+	BORDER-TOP: 1px solid #D9E4F8;
+	BORDER-BOTTOM: 1px solid #0E1D2C;
+	CURSOR: hand;
+	HEIGHT: 18px;
+	color: #FFFFFF;
+	TEXT-DECORATION: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.buttonGo {
+	FONT-SIZE: 10px;
+	BACKGROUND: #006666;
+	BORDER-LEFT: 1px solid #D9E4F8;
+	BORDER-RIGHT: 1px solid #0E1D2C;
+	BORDER-TOP: 1px solid #D9E4F8;
+	BORDER-BOTTOM: 1px solid #0E1D2C;
+	CURSOR: hand;
+	HEIGHT: 16px;
+	color: #FFFFFF;
+	TEXT-DECORATION: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.markButton {
+	FONT-SIZE: 10px;
+/*	font-weight: bold; */
+	BACKGROUND: #006666;
+	BORDER-LEFT: 1px solid #D9E4F8;
+	BORDER-RIGHT: 1px solid #0E1D2C;
+	BORDER-TOP: 1px solid #D9E4F8;
+	BORDER-BOTTOM: 1px solid #0E1D2C;
+	CURSOR: hand;
+	HEIGHT: 18px;
+	color: #FFFFFF;
+	TEXT-DECORATION: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    padding-right:12px;
+    background-image:url(markButt.gif);
+    background-position:right;
+    background-repeat:no-repeat;
+}
+/* Styles used for diff Text types */
+.header1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	letter-spacing: 0.05em;
+	font-weight: bold;
+}
+.header2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+.header3 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #385B05;
+	font-weight: bold;
+}
+.header4 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #993300;
+	font-weight: bold;
+}
+.leftLink {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	text-decoration: none;
+/*	background-image: url(/webclient/common/images/dots.gif);*/
+	background-repeat: no-repeat;
+	background-position: left center;
+	text-align: left;
+	
+}
+/*.disabledLeftLink {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+	color: #A6A6A6;
+    text-decoration: none;
+    background-image: url(/webclient/common/images/dots.gif);
+    background-repeat: no-repeat;
+    background-position: left center;
+    text-align: left;
+    text-indent: 10pt;
+}*/
+.leftLinkSel {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #006666;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-position: left center;
+    text-align: left;
+    text-indent: 2pt;
+    font-weight: bold;
+}
+.leftHeader {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	letter-spacing: 0.05em;	
+	font-weight: bold;
+	color: #000000;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCC99;
+	border-bottom-width: 2px;
+}
+.leftBg {
+    background-color: #FBFBF4;
+}
+.faultsettings {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 0.70pc;
+	color: #6CB104;
+}
+.faultText {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 0.65pc;
+	text-decoration: none;
+	color: #3B6202;
+	font-weight: bold;
+}
+.highlite {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #99CC00;
+}
+/* Styles relating to Tables TABLE.botBorder TD {border-bottom:1px solid #F4FBF0} */
+
+.botBorderTd {
+	border-bottom:#889 1px solid;     
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #000000;
+}
+.botBorderTdall {
+	border:#889 1px solid;     
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #000000;
+}
+.botBorderTdallEtat {
+	border:#889 1px solid;     
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #000000;
+}
+TABLE.NobotBorder TD {border-bottom:thin none}
+
+.tableBorder {
+	margin: 1px;
+	padding: 1px;
+	border: 1px solid #E1E1C4;	
+}
+.msgBox {
+	margin: 2px;
+	padding: 2px;
+	border-bottom:#889 1px solid;     
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color:#006600;
+    font-size: 11px;
+	background-color: #E0FEEC;
+	border: 2px solid #00CC00;	
+}
+.errorBox {
+	margin: 2px;
+	padding: 2px;
+	border-bottom:#889 1px solid;     
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color:#006600;
+    font-size: 11px;
+	background-color: #E0FEEC;
+	border: 2px solid #FF0000;	
+}
+.tableInternal {
+	margin: 1px;
+	padding: 1px;
+	background-color: #F9F9F0;
+}
+.tableOddRowSelected {
+	background-color: #E5EECE;
+}
+.tableEvenRowSelected {
+	background-color: #E5EECE;
+}
+.tableOddRow {
+	background-color: #F7F7EC;
+}
+.tableEvenRow {
+	background-color: #F0F0E1;
+}
+.tableFINIRow {
+	background-color: #FFB0B0;
+}
+.rowOdd {
+        background-color: #F7F7EC;
+}
+.rowEven {
+        background-color: #F0F0E1;
+}
+
+.tableBorder1 {
+	margin: 1px;
+	padding: 1px;
+	border: 2px solid #E1E1C4;
+	background-color: #F9F9F0;
+}
+
+/* Styles used for Fault Settings creation - Expand & Collapse */
+.slideOFF {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #333333;
+	background-color: #F3F3E0;
+}
+.slideON {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #000000;
+	background-color: #CCCC99;
+}
+table#details {
+   background-color:#FFFFFF;
+   width: 99%;
+}
+table#details th{
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   font-size: 11px;
+   font-weight: bold;
+   height: 20px;
+   text-align: left;
+   padding: 4px;
+   color: #000000;
+   background-color: #E7E7CF
+}
+table#details td{
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   height: 22px;
+   border-bottom:1px solid #ffffff;   
+   padding: 4px
+}
+.detailsOddRow {
+   background-color: #F7F7EC;
+}
+.detailsEvenRow {
+   background-color: #F0F0E1;
+}
+.detailsLabelR {
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   font-size: 11px;
+   color: #000000;
+   text-align: right;
+   text-indent: 5pt;
+}
+.detailsLabel {
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   font-size: 11px;
+   color: #000000;
+   text-align: left;
+   text-indent: 5pt;
+}
+.divs {
+   background-color: #FFFFFF;
+   margin: 5px;
+   padding: 5px;
+   text-align: center;
+}
+/* security table, td, th, */
+table#security th{
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   font-size: 12px;
+   font-weight: bold;
+   text-align: left;
+   padding: 4px;
+   color: #2D4C03;
+   background-color: #E7E7CF;
+}
+table#security td{
+   height: 25px;
+   border-bottom: 1px solid #EBF0FC;
+}
+.securityLabel {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	text-align: left;
+	padding-left: 20px;
+	background-color: #F7F7EC;
+
+}
+
+.disabledSecurityLabel {
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   font-size: 11px;
+   color: #A6A6A6;
+   text-align: left;
+   padding-left: 20px;
+}
+
+table#security {
+   background-color:#F8FBF5;
+   width: 99%;
+   border: 1px solid #CBF094;
+}
+table#secdetails {
+   background-color:#FFFFFF;
+   width: 99%;
+}
+table#secdetails th{
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   font-size: 11px;
+   font-weight: bold;
+   height: 20px;
+   text-align: left;
+   padding: 4px;
+   color: #000000;
+   background-color: #E7E7CF;
+}
+table#secdetails td{
+   height: 25px;
+   background-color: #F7F7EC;
+}
+.greyTitle {
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   font-size: 11px;
+   font-weight: bold;
+   text-decoration: none;
+   color: #333333
+}
+.helpText {
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   font-size: 11px;
+   color: #006600;
+   text-decoration: none;
+}
+.homeSubHeadBg {
+    background-color: #EEEECE;
+}
+.homeSubHead {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    text-decoration: none;
+	color: #000000;
+}
+.homeContentBg {
+    background-color: #FBFBF4;
+}
+.help {
+	background-color: #FCFCFC;
+	margin: 5px;
+	padding: 5px;
+	text-align: left;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #666666;
+	border: 1px solid #F4F4F4;
+}
+.seperator {
+    background-color: #FFFFFF;
+}
+/* Styles used for Calendar */
+.calendar {
+	BORDER-RIGHT: #000000 2px solid; BORDER-TOP: #fff 2px solid; DISPLAY: none; FONT-SIZE: 11px; BACKGROUND: #c8d0d4; BORDER-LEFT: #fff 2px solid; CURSOR: default; COLOR: #000; BORDER-BOTTOM: #000 2px solid; FONT-FAMILY: tahoma,verdana,sans-serif; POSITION: relative
+}
+.calendar TABLE {
+	BORDER-RIGHT: #fff 1px solid; BORDER-TOP: #000 1px solid; FONT-SIZE: 11px; BACKGROUND: #FFF; BORDER-LEFT: #000 1px solid; CURSOR: default; COLOR: #000; BORDER-BOTTOM: #fff 1px solid; FONT-FAMILY: tahoma,verdana,sans-serif
+}
+.calendar .button {
+	BORDER-RIGHT: #000000 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #fff 1px solid; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; BORDER-LEFT: #fff 1px solid; PADDING-TOP: 1px; BORDER-BOTTOM: #000 1px solid; TEXT-ALIGN: center
+}
+.calendar .nav {
+	BACKGROUND: url(menuarro.gif) no-repeat 100% 100% 
+}
+.calendar THEAD .title {
+	BORDER-RIGHT: #000000 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #000 1px solid; PADDING-LEFT: 1px; FONT-WEIGHT: bold; BACKGROUND: #006666; PADDING-BOTTOM: 1px; BORDER-LEFT: #000 1px solid; COLOR: #fff; PADDING-TOP: 1px; BORDER-BOTTOM: #000 1px solid; TEXT-ALIGN: center
+}
+.calendar THEAD .headrow {
+	
+}
+.calendar THEAD .daynames {
+	
+}
+.calendar THEAD .name {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; BACKGROUND: #e8f0f4; PADDING-BOTTOM: 2px; PADDING-TOP: 2px; BORDER-BOTTOM: #000 1px solid; TEXT-ALIGN: center
+}
+.calendar THEAD .weekend {
+	COLOR: #f00
+}
+.calendar THEAD .hilite {
+	BORDER-RIGHT: #000000 2px solid; PADDING-RIGHT: 0px; BORDER-TOP: #fff 2px solid; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; BORDER-LEFT: #fff 2px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #000 2px solid; BACKGROUND-COLOR: #d8e0e4
+}
+.calendar THEAD .active {
+	BORDER-RIGHT: #fff 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #000 1px solid; PADDING-LEFT: 2px; PADDING-BOTTOM: 0px; BORDER-LEFT: #000 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #fff 1px solid; BACKGROUND-COLOR: #b8c0c4
+}
+.calendar TBODY .day {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; WIDTH: 2em; PADDING-TOP: 2px; TEXT-ALIGN: right;
+}
+.calendar TBODY .othermonth {
+	FONT-SIZE: 80%; COLOR: #aaa
+}
+.calendar TBODY .oweekend {
+	COLOR: #faa
+}
+.calendar TABLE .wn {
+	BORDER-RIGHT: #000000 1px solid; PADDING-RIGHT: 3px; PADDING-LEFT: 2px; BACKGROUND: #F7F8FA; PADDING-BOTTOM: 2px; PADDING-TOP: 2px; COLOR: #aaa
+}
+.calendar TBODY .rowhilite TD {
+	BACKGROUND: #E7EFF9
+}
+.calendar TBODY .rowhilite TD.wn {
+	BACKGROUND: #E8EDF4
+}
+.calendar TBODY TD.hilite {
+	BORDER-RIGHT: #000000 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #fff 1px solid; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; BORDER-LEFT: #fff 1px solid; PADDING-TOP: 1px; BORDER-BOTTOM: #000 1px solid
+}
+.calendar TBODY TD.active {
+	BORDER-RIGHT: #fff 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #000 1px solid; PADDING-LEFT: 2px; PADDING-BOTTOM: 0px; BORDER-LEFT: #000 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #fff 1px solid
+}
+.calendar TBODY TD.selected {
+	BORDER-RIGHT: #fff 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #000 1px solid; PADDING-LEFT: 2px; FONT-WEIGHT: bold; BACKGROUND: #d8e0e4; PADDING-BOTTOM: 0px; BORDER-LEFT: #000 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #fff 1px solid
+}
+.calendar TBODY TD.weekend {
+	COLOR: #f00
+}
+.calendar TBODY TD.today {
+	FONT-WEIGHT: bold; COLOR: #00f
+}
+.calendar TBODY .disabled {
+	COLOR: #999
+}
+.calendar TBODY .emptycell {
+	VISIBILITY: hidden
+}
+.calendar TBODY .emptyrow {
+	DISPLAY: none
+}
+.calendar TFOOT .footrow {
+}
+.calendar TFOOT .ttip {
+	BORDER-RIGHT: #000000 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #000 1px solid; PADDING-LEFT: 1px; BACKGROUND: #709933; PADDING-BOTTOM: 1px; BORDER-LEFT: #000 1px solid; COLOR: #fff; PADDING-TOP: 1px; BORDER-BOTTOM: #000 1px solid; TEXT-ALIGN: center
+}
+.calendar TFOOT .hilite {
+	BORDER-RIGHT: #000000 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #fff 1px solid; PADDING-LEFT: 1px; BACKGROUND: #F7F7EC; PADDING-BOTTOM: 1px; BORDER-LEFT: #fff 1px solid; PADDING-TOP: 1px; BORDER-BOTTOM: #000 1px solid
+}
+.calendar TFOOT .active {
+	BORDER-RIGHT: #fff 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #000 1px solid; PADDING-LEFT: 2px; PADDING-BOTTOM: 0px; BORDER-LEFT: #000 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #fff 1px solid
+}
+.calendar .combo {
+	BORDER-RIGHT: #000000 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #fff 1px solid; DISPLAY: none; PADDING-LEFT: 1px; FONT-SIZE: 90%; BACKGROUND: #ffffff; LEFT: 0px; PADDING-BOTTOM: 1px; BORDER-LEFT: #fff 1px solid; WIDTH: 4em; CURSOR: default; PADDING-TOP: 1px; BORDER-BOTTOM: #000 1px solid; POSITION: absolute; TOP: 0px
+}
+.calendar .combo .label {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; TEXT-ALIGN: center
+}
+.calendar .combo .label-IEfix {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; TEXT-ALIGN: center
+}
+.calendar .combo .label-IEfix {
+	WIDTH: 4em
+}
+.calendar .combo .active {
+	BORDER-RIGHT: #fff 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #000 1px solid; PADDING-LEFT: 0px; BACKGROUND: #EBEBEB; PADDING-BOTTOM: 0px; BORDER-LEFT: #000 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #fff 1px solid
+}
+.calendar .combo .hilite {
+	BACKGROUND: #048; COLOR: #aef
+}
+.calendar TD.time {
+	PADDING-RIGHT: 0px; BORDER-TOP: #000 1px solid; PADDING-LEFT: 0px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; BACKGROUND-COLOR: #e8f0f4; TEXT-ALIGN: center
+}
+.calendar TD.time .hour {
+	BORDER-RIGHT: #889 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #889 1px solid; PADDING-LEFT: 4px; FONT-WEIGHT: bold; PADDING-BOTTOM: 0px; BORDER-LEFT: #889 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #889 1px solid; BACKGROUND-COLOR: #fff
+}
+.calendar TD.time .minute {
+	BORDER-RIGHT: #889 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #889 1px solid; PADDING-LEFT: 4px; FONT-WEIGHT: bold; PADDING-BOTTOM: 0px; BORDER-LEFT: #889 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #889 1px solid; BACKGROUND-COLOR: #fff
+}
+.calendar TD.time .ampm {
+	BORDER-RIGHT: #889 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #889 1px solid; PADDING-LEFT: 4px; FONT-WEIGHT: bold; PADDING-BOTTOM: 0px; BORDER-LEFT: #889 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #889 1px solid; BACKGROUND-COLOR: #fff
+}
+.calendar TD.time .ampm {
+	TEXT-ALIGN: center
+}
+.calendar TD.time .colon {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 3px; FONT-WEIGHT: bold; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.calendar TD.time SPAN.hilite {
+	BORDER-LEFT-COLOR: #000; BORDER-BOTTOM-COLOR: #000; COLOR: #fff; BORDER-TOP-COLOR: #000; BACKGROUND-COLOR: #667; BORDER-RIGHT-COLOR: #000
+}
+.calendar TD.time SPAN.active {
+	BORDER-LEFT-COLOR: #f00; BORDER-BOTTOM-COLOR: #f00; COLOR: #0f0; BORDER-TOP-COLOR: #f00; BACKGROUND-COLOR: #000; BORDER-RIGHT-COLOR: #f00
+}
+.tbbdr {
+	border: 1px solid #9F9F68;
+
+}
+.newtitle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	text-decoration: underline;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CACAA2;
+	font-weight: bold;
+}
+.txtboldblock {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #000000;
+	background-color: #E7E7CF;
+	height: 22px;
+
+}
+.line2 {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #E1E1C4;
+	background-color: #FFFFFF;
+
+}
+
+a.annotation {
+  position: absolute;
+  border: 2px groove black;
+  padding: 0;
+  display: none;
+}
+a.annotation span {
+  display: block;
+  background: white;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  -moz-opacity: 0.3;
+  filter:alpha(opacity=30);
+}
+a.annotation:hover {
+  border-color: yellow;
+}
+img.annotated {
+  border-width: 0;
+}
+/* ----------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
+
+
+/* Neutral styles */
+/* Navigation styles used in Tab Component */
+.tabsBg {
+    background-image: url(tabsBg00.gif);
+	background-repeat: repeat-x;	
+    margin: 0px;
+    padding: 0px;
+}
+#tab .menuOnBg {
+	BORDER-RIGHT: #333 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #fff 1px solid; PADDING-LEFT: 10px; PADDING-BOTTOM: 3px; BORDER-LEFT: #fff 1px solid; PADDING-TOP: 3px; HEIGHT: 18px; BACKGROUND-COLOR: #cc9; 
+	TEXT-ALIGN: center; text-decoration: none; font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: bold
+}
+#tab .menuOffBg {
+	 PADDING-RIGHT: 10px; 
+	 PADDING-LEFT: 10px; 
+	 PADDING-BOTTOM: 3px; 
+	 PADDING-TOP: 3px; 
+	 /*BORDER-BOTTOM: #fff 1px solid; */
+	 HEIGHT: 18px; TEXT-ALIGN: center;
+	 font-family: Arial, Helvetica, sans-serif; font-size: 11px;		
+	 font-weight: normal;
+}
+#tab .menuOn:hover {
+	TEXT-DECORATION: none
+}
+#tab .menuOff:hover {
+	TEXT-DECORATION: none
+}
+#tab .menuOff {
+    color:white;
+    TEXT-DECORATION:none
+}
+
+#subtab .menuOnBg {
+   PADDING-RIGHT: 20px;
+   PADDING-LEFT: 20px;
+   PADDING-BOTTOM: 3px;
+   PADDING-TOP: 3px; HEIGHT: 18px;
+   BACKGROUND-COLOR: #006666;
+   TEXT-ALIGN: center;
+   text-decoration: none;
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   font-size: 11px;
+   font-weight: bold;
+   color:#fff
+}
+#subtab .menuOffBg {
+   PADDING-RIGHT: 20px;
+   PADDING-LEFT: 20px;
+   PADDING-BOTTOM: 3px;
+   PADDING-TOP: 3px;
+   HEIGHT: 18px;
+   TEXT-ALIGN: center;
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   font-size: 11px;
+   font-weight: bold;
+   color:#000;
+}
+
+
+#subtab .menuOn:hover {
+   TEXT-DECORATION: underline
+}
+#subtab .menuOff:hover {
+   TEXT-DECORATION: underline
+}
+#subtab .menuOn {
+   color:white;
+   TEXT-DECORATION:none  
+} 
+
+
+.searchBeg {
+    background-image: url(searchBe.gif);
+    margin: 0px;
+    padding: 0px;
+}
+.searchBg {
+    background-color: #CCCC99;
+}
+/* Styles for diff' Bg Colors */
+.header2Bg {    
+    background-color: #E7E7CF;
+}
+.tableHeader {
+    /*background-color: #EEEECE;*/
+ font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+  font-weight: bold;
+border-bottom-color: #91A0B2;
+background-position: center; 
+padding-left: 3px;
+height: 20px; 
+    color: #000000;
+
+}
+
+.hLine {
+    background-color: #709933;
+}
+.orangeLine {
+    background-color: #CCCC99;
+}
+.blueLine {
+    background-color: #CCCC99;
+}
+.thresholdSelection {
+    background-color: #F8FCEC;
+}
+/* Styles for Reports */
+.reportsHeaderBg {
+	background-color: #E7E7CF;
+}
+.reportsHeader {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000000
+}
+.reportsOddRow {
+	background-color: #F7F7EC;
+	padding: 4px;
+}
+.reportsEvenRow {
+	background-color: #F0F0E1;
+	padding: 4px;
+}
+.reportsBorder {
+	margin: 1px;
+	padding: 1px;
+	border: 1px solid #C1E395;
+}
+.progressTable {
+	background-image:  url(progress.gif);
+	background-repeat: no-repeat;
+}
+
+/* Styles used for Form Elements */
+.button {
+	FONT-SIZE: 10px;
+/*	font-weight: bold; */
+	BACKGROUND: #006666;
+	BORDER-LEFT: 1px solid #D9E4F8;
+	BORDER-RIGHT: 1px solid #0E1D2C;
+	BORDER-TOP: 1px solid #D9E4F8;
+	BORDER-BOTTOM: 1px solid #0E1D2C;
+	CURSOR: hand;
+	HEIGHT: 18px;
+	color: #FFFFFF;
+	TEXT-DECORATION: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.buttonGo {
+	FONT-SIZE: 10px;
+	BACKGROUND: #006666;
+	BORDER-LEFT: 1px solid #D9E4F8;
+	BORDER-RIGHT: 1px solid #0E1D2C;
+	BORDER-TOP: 1px solid #D9E4F8;
+	BORDER-BOTTOM: 1px solid #0E1D2C;
+	CURSOR: hand;
+	HEIGHT: 16px;
+	color: #FFFFFF;
+	TEXT-DECORATION: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.markButton {
+	FONT-SIZE: 10px;
+/*	font-weight: bold; */
+	BACKGROUND: #006666;
+	BORDER-LEFT: 1px solid #D9E4F8;
+	BORDER-RIGHT: 1px solid #0E1D2C;
+	BORDER-TOP: 1px solid #D9E4F8;
+	BORDER-BOTTOM: 1px solid #0E1D2C;
+	CURSOR: hand;
+	HEIGHT: 18px;
+	color: #FFFFFF;
+	TEXT-DECORATION: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    padding-right:12px;
+    background-image:url(markButt.gif);
+    background-position:right;
+    background-repeat:no-repeat;
+}
+/* Styles used for diff Text types */
+.header1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	letter-spacing: 0.05em;
+	font-weight: bold;
+}
+.header2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+.header3 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #385B05;
+	font-weight: bold;
+}
+.header4 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #993300;
+	font-weight: bold;
+}
+.leftLink {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	text-decoration: none;
+/*	background-image: url(/webclient/common/images/dots.gif);*/
+	background-repeat: no-repeat;
+	background-position: left center;
+	text-align: left;
+	
+}
+/*.disabledLeftLink {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+	color: #A6A6A6;
+    text-decoration: none;
+    background-image: url(/webclient/common/images/dots.gif);
+    background-repeat: no-repeat;
+    background-position: left center;
+    text-align: left;
+    text-indent: 10pt;
+}*/
+.leftLinkSel {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #006666;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-position: left center;
+    text-align: left;
+    text-indent: 2pt;
+    font-weight: bold;
+}
+.leftHeader {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	letter-spacing: 0.05em;	
+	font-weight: bold;
+	color: #000000;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCC99;
+	border-bottom-width: 2px;
+}
+.leftBg {
+    background-color: #FBFBF4;
+}
+.faultsettings {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 0.70pc;
+	color: #6CB104;
+}
+.faultText {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 0.65pc;
+	text-decoration: none;
+	color: #3B6202;
+	font-weight: bold;
+}
+.highlite {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #99CC00;
+}
+/* Styles relating to TablesTABLE.botBorder TD {border-bottom:1px solid #F4FBF0} */
+
+
+TABLE.NobotBorder TD {border-bottom:thin none}
+
+.tableBorder {
+	margin: 1px;
+	padding: 1px;
+	border: 1px solid #E1E1C4;	
+}
+.tableInternal {
+	margin: 1px;
+	padding: 1px;
+	background-color: #F9F9F0;
+}
+.tableOddRowSelected {
+	background-color: #E5EECE;
+}
+.tableEvenRowSelected {
+	background-color: #E5EECE;
+}
+.tableOddRow {
+	background-color: #F7F7EC;
+}
+.tableEvenRow {
+	background-color: #F0F0E1;
+}
+.rowOdd {
+        background-color: #F7F7EC;
+}
+.rowEven {
+        background-color: #F0F0E1;
+}
+
+.tableBorder1 {
+	margin: 1px;
+	padding: 1px;
+	border: 2px solid #E1E1C4;
+	background-color: #F9F9F0;
+}
+
+/* Styles used for Fault Settings creation - Expand & Collapse */
+.slideOFF {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #333333;
+	background-color: #F3F3E0;
+}
+.slideON {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #000000;
+	background-color: #CCCC99;
+}
+table#details {
+   background-color:#FFFFFF;
+   width: 99%;
+}
+table#details th{
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   font-size: 11px;
+   font-weight: bold;
+   height: 20px;
+   text-align: left;
+   padding: 4px;
+   color: #000000;
+   background-color: #E7E7CF
+}
+table#details td{
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   height: 22px;
+   border-bottom:1px solid #ffffff;   
+   padding: 4px
+}
+.detailsOddRow {
+   background-color: #F7F7EC;
+}
+.detailsEvenRow {
+   background-color: #F0F0E1;
+}
+.detailsLabelR {
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   font-size: 11px;
+   color: #000000;
+   text-align: right;
+   text-indent: 5pt;
+}
+.detailsLabel {
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   font-size: 11px;
+   color: #000000;
+   text-align: left;
+   text-indent: 5pt;
+}
+.divs {
+   background-color: #FFFFFF;
+   margin: 5px;
+   padding: 5px;
+   text-align: center;
+}
+/* security table, td, th, */
+table#security th{
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   font-size: 12px;
+   font-weight: bold;
+   text-align: left;
+   padding: 4px;
+   color: #2D4C03;
+   background-color: #E7E7CF;
+}
+table#security td{
+   height: 25px;
+   border-bottom: 1px solid #EBF0FC;
+}
+.securityLabel {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	text-align: left;
+	padding-left: 20px;
+	background-color: #F7F7EC;
+
+}
+
+.disabledSecurityLabel {
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   font-size: 11px;
+   color: #A6A6A6;
+   text-align: left;
+   padding-left: 20px;
+}
+
+table#security {
+   background-color:#F8FBF5;
+   width: 99%;
+   border: 1px solid #CBF094;
+}
+table#secdetails {
+   background-color:#FFFFFF;
+   width: 99%;
+}
+table#secdetails th{
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   font-size: 11px;
+   font-weight: bold;
+   height: 20px;
+   text-align: left;
+   padding: 4px;
+   color: #000000;
+   background-color: #E7E7CF;
+}
+table#secdetails td{
+   height: 25px;
+   background-color: #F7F7EC;
+}
+.greyTitle {
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   font-size: 11px;
+   font-weight: bold;
+   text-decoration: none;
+   color: #333333
+}
+.helpText {
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   font-size: 11px;
+   color: #006600;
+   text-decoration: none;
+}
+.homeSubHeadBg {
+    background-color: #EEEECE;
+}
+.homeSubHead {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    text-decoration: none;
+	color: #000000;
+}
+.homeContentBg {
+    background-color: #FBFBF4;
+}
+.help {
+	background-color: #FCFCFC;
+	margin: 5px;
+	padding: 5px;
+	text-align: left;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #666666;
+	border: 1px solid #F4F4F4;
+}
+.seperator {
+    background-color: #FFFFFF;
+}
+/* Styles used for Calendar */
+.calendar {
+	BORDER-RIGHT: #000000 2px solid; BORDER-TOP: #fff 2px solid; DISPLAY: none; FONT-SIZE: 11px; BACKGROUND: #c8d0d4; BORDER-LEFT: #fff 2px solid; CURSOR: default; COLOR: #000; BORDER-BOTTOM: #000 2px solid; FONT-FAMILY: tahoma,verdana,sans-serif; POSITION: relative
+}
+.calendar TABLE {
+	BORDER-RIGHT: #fff 1px solid; BORDER-TOP: #000 1px solid; FONT-SIZE: 11px; BACKGROUND: #FFF; BORDER-LEFT: #000 1px solid; CURSOR: default; COLOR: #000; BORDER-BOTTOM: #fff 1px solid; FONT-FAMILY: tahoma,verdana,sans-serif
+}
+.calendar .button {
+	BORDER-RIGHT: #000000 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #fff 1px solid; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; BORDER-LEFT: #fff 1px solid; PADDING-TOP: 1px; BORDER-BOTTOM: #000 1px solid; TEXT-ALIGN: center
+}
+.calendar .nav {
+	BACKGROUND: url(menuarro.gif) no-repeat 100% 100% 
+}
+.calendar THEAD .title {
+	BORDER-RIGHT: #000000 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #000 1px solid; PADDING-LEFT: 1px; FONT-WEIGHT: bold; BACKGROUND: #006666; PADDING-BOTTOM: 1px; BORDER-LEFT: #000 1px solid; COLOR: #fff; PADDING-TOP: 1px; BORDER-BOTTOM: #000 1px solid; TEXT-ALIGN: center
+}
+.calendar THEAD .headrow {
+	
+}
+.calendar THEAD .daynames {
+	
+}
+.calendar THEAD .name {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; BACKGROUND: #e8f0f4; PADDING-BOTTOM: 2px; PADDING-TOP: 2px; BORDER-BOTTOM: #000 1px solid; TEXT-ALIGN: center
+}
+.calendar THEAD .weekend {
+	COLOR: #f00
+}
+.calendar THEAD .hilite {
+	BORDER-RIGHT: #000000 2px solid; PADDING-RIGHT: 0px; BORDER-TOP: #fff 2px solid; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; BORDER-LEFT: #fff 2px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #000 2px solid; BACKGROUND-COLOR: #d8e0e4
+}
+.calendar THEAD .active {
+	BORDER-RIGHT: #fff 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #000 1px solid; PADDING-LEFT: 2px; PADDING-BOTTOM: 0px; BORDER-LEFT: #000 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #fff 1px solid; BACKGROUND-COLOR: #b8c0c4
+}
+.calendar TBODY .day {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; WIDTH: 2em; PADDING-TOP: 2px; TEXT-ALIGN: right;
+}
+.calendar TBODY .othermonth {
+	FONT-SIZE: 80%; COLOR: #aaa
+}
+.calendar TBODY .oweekend {
+	COLOR: #faa
+}
+.calendar TABLE .wn {
+	BORDER-RIGHT: #000000 1px solid; PADDING-RIGHT: 3px; PADDING-LEFT: 2px; BACKGROUND: #F7F8FA; PADDING-BOTTOM: 2px; PADDING-TOP: 2px; COLOR: #aaa
+}
+.calendar TBODY .rowhilite TD {
+	BACKGROUND: #E7EFF9
+}
+.calendar TBODY .rowhilite TD.wn {
+	BACKGROUND: #E8EDF4
+}
+.calendar TBODY TD.hilite {
+	BORDER-RIGHT: #000000 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #fff 1px solid; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; BORDER-LEFT: #fff 1px solid; PADDING-TOP: 1px; BORDER-BOTTOM: #000 1px solid
+}
+.calendar TBODY TD.active {
+	BORDER-RIGHT: #fff 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #000 1px solid; PADDING-LEFT: 2px; PADDING-BOTTOM: 0px; BORDER-LEFT: #000 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #fff 1px solid
+}
+.calendar TBODY TD.selected {
+	BORDER-RIGHT: #fff 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #000 1px solid; PADDING-LEFT: 2px; FONT-WEIGHT: bold; BACKGROUND: #d8e0e4; PADDING-BOTTOM: 0px; BORDER-LEFT: #000 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #fff 1px solid
+}
+.calendar TBODY TD.weekend {
+	COLOR: #f00
+}
+.calendar TBODY TD.today {
+	FONT-WEIGHT: bold; COLOR: #00f
+}
+.calendar TBODY .disabled {
+	COLOR: #999
+}
+.calendar TBODY .emptycell {
+	VISIBILITY: hidden
+}
+.calendar TBODY .emptyrow {
+	DISPLAY: none
+}
+.calendar TFOOT .footrow {
+}
+.calendar TFOOT .ttip {
+	BORDER-RIGHT: #000000 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #000 1px solid; PADDING-LEFT: 1px; BACKGROUND: #709933; PADDING-BOTTOM: 1px; BORDER-LEFT: #000 1px solid; COLOR: #fff; PADDING-TOP: 1px; BORDER-BOTTOM: #000 1px solid; TEXT-ALIGN: center
+}
+.calendar TFOOT .hilite {
+	BORDER-RIGHT: #000000 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #fff 1px solid; PADDING-LEFT: 1px; BACKGROUND: #F7F7EC; PADDING-BOTTOM: 1px; BORDER-LEFT: #fff 1px solid; PADDING-TOP: 1px; BORDER-BOTTOM: #000 1px solid
+}
+.calendar TFOOT .active {
+	BORDER-RIGHT: #fff 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #000 1px solid; PADDING-LEFT: 2px; PADDING-BOTTOM: 0px; BORDER-LEFT: #000 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #fff 1px solid
+}
+.calendar .combo {
+	BORDER-RIGHT: #000000 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #fff 1px solid; DISPLAY: none; PADDING-LEFT: 1px; FONT-SIZE: 90%; BACKGROUND: #ffffff; LEFT: 0px; PADDING-BOTTOM: 1px; BORDER-LEFT: #fff 1px solid; WIDTH: 4em; CURSOR: default; PADDING-TOP: 1px; BORDER-BOTTOM: #000 1px solid; POSITION: absolute; TOP: 0px
+}
+.calendar .combo .label {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; TEXT-ALIGN: center
+}
+.calendar .combo .label-IEfix {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; TEXT-ALIGN: center
+}
+.calendar .combo .label-IEfix {
+	WIDTH: 4em
+}
+.calendar .combo .active {
+	BORDER-RIGHT: #fff 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #000 1px solid; PADDING-LEFT: 0px; BACKGROUND: #EBEBEB; PADDING-BOTTOM: 0px; BORDER-LEFT: #000 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #fff 1px solid
+}
+.calendar .combo .hilite {
+	BACKGROUND: #048; COLOR: #aef
+}
+.calendar TD.time {
+	PADDING-RIGHT: 0px; BORDER-TOP: #000 1px solid; PADDING-LEFT: 0px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; BACKGROUND-COLOR: #e8f0f4; TEXT-ALIGN: center
+}
+.calendar TD.time .hour {
+	BORDER-RIGHT: #889 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #889 1px solid; PADDING-LEFT: 4px; FONT-WEIGHT: bold; PADDING-BOTTOM: 0px; BORDER-LEFT: #889 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #889 1px solid; BACKGROUND-COLOR: #fff
+}
+.calendar TD.time .minute {
+	BORDER-RIGHT: #889 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #889 1px solid; PADDING-LEFT: 4px; FONT-WEIGHT: bold; PADDING-BOTTOM: 0px; BORDER-LEFT: #889 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #889 1px solid; BACKGROUND-COLOR: #fff
+}
+.calendar TD.time .ampm {
+	BORDER-RIGHT: #889 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #889 1px solid; PADDING-LEFT: 4px; FONT-WEIGHT: bold; PADDING-BOTTOM: 0px; BORDER-LEFT: #889 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #889 1px solid; BACKGROUND-COLOR: #fff
+}
+.calendar TD.time .ampm {
+	TEXT-ALIGN: center
+}
+.calendar TD.time .colon {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 3px; FONT-WEIGHT: bold; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.calendar TD.time SPAN.hilite {
+	BORDER-LEFT-COLOR: #000; BORDER-BOTTOM-COLOR: #000; COLOR: #fff; BORDER-TOP-COLOR: #000; BACKGROUND-COLOR: #667; BORDER-RIGHT-COLOR: #000
+}
+.calendar TD.time SPAN.active {
+	BORDER-LEFT-COLOR: #f00; BORDER-BOTTOM-COLOR: #f00; COLOR: #0f0; BORDER-TOP-COLOR: #f00; BACKGROUND-COLOR: #000; BORDER-RIGHT-COLOR: #f00
+}
+.tbbdr {
+	border: 1px solid #9F9F68;
+
+}
+.newtitle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	text-decoration: underline;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CACAA2;
+	font-weight: bold;
+}
+.txtboldblock {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #000000;
+	background-color: #E7E7CF;
+	height: 22px;
+
+}
+.line2 {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #E1E1C4;
+	background-color: #FFFFFF;
+
+}
+
+a.annotation {
+  position: absolute;
+  border: 2px groove black;
+  padding: 0;
+  display: none;
+}
+a.annotation span {
+  display: block;
+  background: white;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  -moz-opacity: 0.3;
+  filter:alpha(opacity=30);
+}
+a.annotation:hover {
+  border-color: yellow;
+}
+img.annotated {
+  border-width: 0;
+}
+
+/* ------------ Spin Button ------------------------------------------------------- */
+INPUT.spin-button {
+	padding-right:20px;					/* Padding pevents text from covering the up/dn img. Works better in Firefox but also causes textbox to widen by 20px. Arrows can go wonky in IE when text is too long. Perhaps it could be fixed with script that monitored the horiz-scroll position? */
+	background-repeat:no-repeat;		/* Warning: Img may disappear in Firefox if you use 'background-attachment:fixed' ! */
+	background-position:100% 0%;
+	background-image:url(spinbtn_updn.gif);
+}
+
+INPUT.spin-button.up {					/* Change button img when mouse is over the UP-arrow */
+	cursor:pointer;
+	background-position:100% -18px;		/* 18px matches height of 2 visible buttons */
+}
+INPUT.spin-button.down {				/* Change button img when mouse is over the DOWN-arrow */
+	cursor:pointer;
+	background-position:100% -36px;		/* 36px matches height of 2x2 visible buttons */
+}
+
+.errorMsg{
+	border:1px solid #F00;
+	padding:5px 30px;
+	background-image:url(../images/error.gif);
+	background-repeat:no-repeat;
+	color:#FF0000;
+	
+	}
+	
+.okMsg{
+	border:1px solid #090;
+	padding:5px 30px;
+	background-image:url(../images/ok.gif);
+	background-repeat:no-repeat;
+	color: #090;
+	
+	}

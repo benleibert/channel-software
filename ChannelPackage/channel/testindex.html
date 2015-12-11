@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Document sans nom</title>
+
+<link type="text/css" href="lib/themes/base/ui.all.css" rel="stylesheet" />
+<link type="text/css" href="lib/demos.css" rel="stylesheet" />
+<script type="text/javascript" src="lib/ui/ui.core.js"></script>
+<script type="text/javascript" src="lib/ui/ui.datepicker.js"></script>
+
+<script type="text/javascript" src="lib/jquery.js"></script>
+<script type="text/javascript" src="lib/jquery1_11.js"></script>
+<script type="text/javascript" src="lib/jquery.mask.min.js"></script>
+<script type="text/javascript">	
+$(document).ready(function(){
+ 
+  $('.placeholder').mask("00/00/0000", {placeholder: "__/__/____"});
+});
+</script>
+
+<script type="text/javascript">	$(function() {
+		$('#datepicker1').datepicker({
+			showButtonPanel: true,
+			dateFormat: "dd-mm-yy" });
+	});
+	
+</script>
+<style type="text/css">
+<!--
+.Style2 {
+	font-size: x-large;
+	font-family: "Times New Roman", Times, serif;
+}
+-->
+</style>
+</head>
+
+
+<body>
+<form id="form1" name="form1" method="post" action="">
+  <label for="madate"></label>
+  <input type="text" name="madate" id="madate" class="placeholder" />
+  <br />
+  <input type="text" name="datepicker1" id="datepicker1" />
+</form>
+</body>
+</html>

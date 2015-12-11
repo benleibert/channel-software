@@ -1,0 +1,225 @@
+//ADD ORDER
+function ligneaddCommande2($nbre=1, $data=array()){
+	$ret = '';
+	$verif = '';
+	for ($i=1; $i <= $nbre; $i++){
+		(isset($data[$i-1]['codeproduit'])? $codeproduit 	= $data[$i-1]['codeproduit'] 	: $codeproduit	='');
+		(isset($data[$i-1]['oldcodeproduit'])? $oldcodeproduit 	= $data[$i-1]['oldcodeproduit'] 	: $oldcodeproduit	='');
+		(isset($data[$i-1]['produit']) 	? $produit 		= $data[$i-1]['produit'] 		: $produit		='');
+		(isset($data[$i-1]['qte'])			? $qte 			= $data[$i-1]['qte'] 			: $qte			='');
+		(isset($data[$i-1]['unite']) 		? $unite 		= $data[$i-1]['unite'] 			: $unite		='');
+		(isset($data[$i-1]['prix']) 		? $prix 		= $data[$i-1]['prix'] 			: $prix		='');
+
+		$verif .= "trimAll(document.formadd.qte$i.value)=='' && ";
+		($total = $prix*$qte>0 ? $total=number_format($prix*$qte,2,'.','') : $total = '');
+		($prix>0 ? $prix=number_format($prix,2,'.','') : $prix = '');
+
+		$ret .= '
+		<tr align="left" valign="middle">
+            <td class="botBorderTd" nowrap>'.$i.' - </td>
+			<td class="botBorderTd"><input name="delete'.$i.'" type="button" class="button" title="Supprimer" value=" X " onClick="msgSupprLigne(\''.$codeproduit.'\','.$i.');"></td>
+			<td class="botBorderTd"><input name="openf'.$i.'" type="button" class="button"  title="Produit" value="..." onClick="OpenWin(\'listeproduitcde.php?lg='.$i.'\',\'Liste\');"></td>
+			<td class="botBorderTd"><input name="codeproduit'.$i.'" type="text" readonly="readonly" class="formStyleFree" id="codeproduit'.$i.'" size="10" value="'.$codeproduit.'" onblur="if(parseFloat(document.getElementById(\'qte'.$i.'\').value)*parseFloat(document.getElementById(\'prix'.$i.'\').value)>0) {document.getElementById(\'total'.$i.'\').value =parseFloat(document.getElementById(\'qte'.$i.'\').value)*parseFloat(document.getElementById(\'prix'.$i.'\').value)}" />
+			<input name="oldcodeproduit'.$i.'" type="hidden" id="oldcodeproduit'.$i.'" value="'.$oldcodeproduit.'"></td>
+            <td class="botBorderTd"><input name="produit'.$i.'" type="text" readonly="readonly" class="formStyle" id="produit'.$i.'" value="'.(stripslashes($produit)).'" onblur="if(parseFloat(document.getElementById(\'qte'.$i.'\').value)*parseFloat(document.getElementById(\'prix'.$i.'\').value)>0) {document.getElementById(\'total'.$i.'\').value =parseFloat(document.getElementById(\'qte'.$i.'\').value)*parseFloat(document.getElementById(\'prix'.$i.'\').value)}" /></td>
+            <td class="botBorderTd"><input name="qte'.$i.'" type="text" class="formStyleFree" id="qte'.$i.'" size="10" value="'.$qte.'" onblur="if(parseFloat(document.getElementById(\'qte'.$i.'\').value)*parseFloat(document.getElementById(\'prix'.$i.'\').value)>0) {document.getElementById(\'total'.$i.'\').value =parseFloat(document.getElementById(\'qte'.$i.'\').value)*parseFloat(document.getElementById(\'prix'.$i.'\').value)}" /></td>
+			<td class="botBorderTd"><input name="unite'.$i.'" type="text" readonly="readonly" class="formStyleFree" id="unite'.$i.'" size="10" value="'.$unite.'" onblur="if(parseFloat(document.getElementById(\'qte'.$i.'\').value)*parseFloat(document.getElementById(\'prix'.$i.'\').value)>0) {document.getElementById(\'total'.$i.'\').value =parseFloat(document.getElementById(\'qte'.$i.'\').value)*parseFloat(document.getElementById(\'prix'.$i.'\').value)}" /></td>
+			<td class="botBorderTd"><input name="prix'.$i.'" type="text" class="formStyleFree" id="prix'.$i.'" value="'.$prix.'" size="10" value=""  onblur="if(parseFloat(document.getElementById(\'qte'.$i.'\').value)*parseFloat(document.getElementById(\'prix'.$i.'\').value)>0) {document.getElementById(\'total'.$i.'\').value =parseFloat(document.getElementById(\'qte'.$i.'\').value)*parseFloat(document.getElementById(\'prix'.$i.'\').value)}" /></td>
+			<td class="botBorderTd"><input name="total'.$i.'" type="text" readonly="readonly" class="formStyleFree" id="total'.$i.'" value="'.$total.'" size="10" value="" ></td>
+        </tr>';
+	}
+	if($verif!='') {
+		$verif = substr($verif,0,strlen($verif)-3);
+		$fonction ="
+		function tousVide(){
+			if($verif) {return 1;}
+			else {return 0;}
+		}
+		";
+	}
+	return array($fonction,$ret);
+}
+
+
+
+
+//NOT USE
+function ligneaddLivraison($nbre=1, $data=array()){
+	$ret = '';
+	$verif='';
+	$lotvide ='';
+	if ($nbre==0) {
+		$ret .= '<tr align="left" valign="middle"><td class="botBorderTd" colspan="6">'.(stripslashes('Cette commande a été entièrement livrée, veuillez vérifier dans la liste des livraisons ')).'</td></tr>';
+	}
+	else
+	for ($i=1; $i <= $nbre; $i++){
+		(isset($data[$i-1]['code_detlivraison'])	? $code_detlivraison 	= $data[$i-1]['code_detlivraison'] : $code_detlivraison	='');
+		(isset($data[$i-1]['monlot'])			? $monlot 			= $data[$i-1]['monlot'] 		: $monlot	='');
+		(isset($data[$i-1]['codeproduit'])		? $codeproduit 		= $data[$i-1]['codeproduit'] 	: $codeproduit	='');
+		(isset($data[$i-1]['oldcodeproduit'])		? $oldcodeproduit 		= $data[$i-1]['oldcodeproduit'] 	: $oldcodeproduit	='');
+		(isset($data[$i-1]['produit']) 			? $produit 			= $data[$i-1]['produit'] 		: $produit		='');
+		(isset($data[$i-1]['qte'])				? $qte 				= $data[$i-1]['qte'] 			: $qte			='');
+		(isset($data[$i-1]['qtelvr'])			? $qtelvr 			= $data[$i-1]['qtelvr'] 		: $qtelvr			='');
+		(isset($data[$i-1]['unite']) 			? $unite 			= $data[$i-1]['unite'] 			: $unite		='');
+		(isset($data[$i-1]['mag'])				? $mag		 		= $data[$i-1]['mag'] 			: $mag			='MAG0');
+		(isset($data[$i-1]['prix'])				? $prix		 		= $data[$i-1]['prix'] 			: $prix			='');
+		(isset($data[$i-1]['reflot']) 			? $reflot 			= $data[$i-1]['reflot'] 		: $reflot		='');
+		(isset($data[$i-1]['dateperemp']) 		? $dateperemp 		= $data[$i-1]['dateperemp'] 	: $dateperemp		='');
+
+		($prix*$qtelvr>0 ? $total=number_format($prix*$qtelvr,2,'.','') : $total = '');
+		($prix>0 ? $prix=number_format($prix,2,'.','') : $prix = '');
+
+		$verif .= "trimAll(document.formadd.qtelvr$i.value)=='' && ";
+		$lotvide .= "if (trimAll(document.formadd.codeproduit$i.value)!=''  && trimAll(document.formadd.reflot$i.value)=='') { msg +='- Veuillez saisir la référence du lot (ligne $i).\\n';}\n";
+		$lotvide .= "if (trimAll(document.formadd.codeproduit$i.value)!=''  && trimAll(document.formadd.dateperemp$i.value)=='') { msg +='- Veuillez saisir la date de péremption du lot (ligne $i).\\n';}\n";
+
+		$ret .= '
+		<tr align="left" valign="middle">
+            <td class="botBorderTd" nowrap>'.$i.' - </td>
+			<!-- <td class="botBorderTd"><input name="openf'.$i.'" type="button" class="button"  value="..." onClick="OpenWin(\'listearticlescde.php?lg='.$i.'\',\'Liste\');"></td> -->
+			<input name="code_detlivraison'.$i.'" type="hidden"   id="code_detlivraison'.$i.'" size="10" value="'.$code_detlivraison.'">
+			<input name="monlot'.$i.'" type="hidden"   id="monlot'.$i.'" size="10" value="'.$monlot.'"></td>
+			<td class="botBorderTd"><input name="codeproduit'.$i.'" type="text"  readonly="readonly" class="formStyleFree" id="codeproduit'.$i.'" size="10" value="'.$codeproduit.'" onblur="if(parseFloat(document.getElementById(\'qtelvr'.$i.'\').value)*parseFloat(document.getElementById(\'prix'.$i.'\').value)>0) {document.getElementById(\'total'.$i.'\').value =parseFloat(document.getElementById(\'qtelvr'.$i.'\').value)*parseFloat(document.getElementById(\'prix'.$i.'\').value)}" />
+			<input name="oldcodeproduit'.$i.'" type="hidden"   id="oldcodeproduit'.$i.'" size="10" value="'.$oldcodeproduit.'" onblur="if(parseFloat(document.getElementById(\'qtelvr'.$i.'\').value)*parseFloat(document.getElementById(\'prix'.$i.'\').value)>0) {document.getElementById(\'total'.$i.'\').value =parseFloat(document.getElementById(\'qtelvr'.$i.'\').value)*parseFloat(document.getElementById(\'prix'.$i.'\').value)}" /></td>
+            <td class="botBorderTd"><input name="produit'.$i.'" type="text"  readonly="readonly" class="formStyle" id="produit'.$i.'" value="'.(stripslashes($produit)).'" onblur="if(parseFloat(document.getElementById(\'qtelvr'.$i.'\').value)*parseFloat(document.getElementById(\'prix'.$i.'\').value)>0) {document.getElementById(\'total'.$i.'\').value =parseFloat(document.getElementById(\'qtelvr'.$i.'\').value)*parseFloat(document.getElementById(\'prix'.$i.'\').value)}" /></td>
+            <td class="botBorderTd"><input name="qte'.$i.'" type="text" readonly="readonly" class="formStyleFree" id="qte'.$i.'" size="10" value="'.$qte.'"  onblur="if(parseFloat(document.getElementById(\'qtelvr'.$i.'\').value)*parseFloat(document.getElementById(\'prix'.$i.'\').value)>0) {document.getElementById(\'total'.$i.'\').value =parseFloat(document.getElementById(\'qtelvr'.$i.'\').value)*parseFloat(document.getElementById(\'prix'.$i.'\').value)}" /></td>
+			<td class="botBorderTd"><input name="qtelvr'.$i.'" type="text" class="formStyleFree" id="qtelvr'.$i.'" value="'.$qtelvr.'" size="10"   onBlur="checkQte(\'qte'.$i.'\',\'qtelvr'.$i.'\'); if(parseFloat(document.getElementById(\'qtelvr'.$i.'\').value)*parseFloat(document.getElementById(\'prix'.$i.'\').value)>0) {document.getElementById(\'total'.$i.'\').value =parseFloat(document.getElementById(\'qtelvr'.$i.'\').value)*parseFloat(document.getElementById(\'prix'.$i.'\').value)}" /></td>
+			<td class="botBorderTd"><input name="unite'.$i.'" type="text"  readonly="readonly" class="formStyleFree" id="unite'.$i.'" size="10" value="'.$unite.'" onblur="if(parseFloat(document.getElementById(\'qtelvr'.$i.'\').value)*parseFloat(document.getElementById(\'prix'.$i.'\').value)>0) {document.getElementById(\'total'.$i.'\').value =parseFloat(document.getElementById(\'qtelvr'.$i.'\').value)*parseFloat(document.getElementById(\'prix'.$i.'\').value)}" />
+			<input name="dispo'.$i.'" type="hidden" id="dispo'.$i.'"  value=""></td>
+			<td class="botBorderTd"><input name="prix'.$i.'" type="text" class="formStyleFree" id="prix'.$i.'" value="'.$prix.'" size="10"  onblur="if(parseFloat(document.getElementById(\'qtelvr'.$i.'\').value)*parseFloat(document.getElementById(\'prix'.$i.'\').value)>0) {document.getElementById(\'total'.$i.'\').value =parseFloat(document.getElementById(\'qtelvr'.$i.'\').value)*parseFloat(document.getElementById(\'prix'.$i.'\').value)}" /></td>
+			<td class="botBorderTd"><input name="total'.$i.'" type="text" readonly="readonly" class="formStyleFree" id="total'.$i.'" value="'.$total.'" size="10"  /></td>
+			<td class="botBorderTd"><input name="reflot'.$i.'" type="text" class="formStyleFree" id="reflot'.$i.'" value="'.$reflot.'" size="10"   onblur="if(parseFloat(document.getElementById(\'qtelvr'.$i.'\').value)*parseFloat(document.getElementById(\'prix'.$i.'\').value)>0) {document.getElementById(\'total'.$i.'\').value =parseFloat(document.getElementById(\'qtelvr'.$i.'\').value)*parseFloat(document.getElementById(\'prix'.$i.'\').value)}" /></td>
+			<td class="botBorderTd"><input name="dateperemp'.$i.'" type="text" class="placeholder formStyleFree" id="dateperemp'.$i.'" value="'.$dateperemp.'"  size="10"  onblur="if(parseFloat(document.getElementById(\'qtelvr'.$i.'\').value)*parseFloat(document.getElementById(\'prix'.$i.'\').value)>0) {document.getElementById(\'total'.$i.'\').value =parseFloat(document.getElementById(\'qtelvr'.$i.'\').value)*parseFloat(document.getElementById(\'prix'.$i.'\').value)}" / ></td>
+
+        </tr>';
+
+
+		//<td class="botBorderTd"><select name="magasin'.$i.'" id="magasin'.$i.'" class="formStyle"><option value="0"></option>'.selectMagasin($mag).'</select></td>
+		//javascript:if(document.formadd.qte'.$i.'.value!=\'\' && document.formadd.qtelvr'.$i.'.value !=\'\' && parseFloat(document.formadd.qtelvr'.$i.'.value)>parseFloat(document.formadd.qte'.$i.'.value)){alert(\'La qunatité reçue est supérieure à la quantité commandée\n\'+document.formadd.qtelvr'.$i.'.value+\'>\'+document.formadd.qte'.$i.'.value);document.formadd.qtelvr'.$i.'.focus(); }
+	}
+	if($verif!='') {
+		$verif = substr($verif,0,strlen($verif)-3);
+		$fonction ="
+		function tousVide(){
+			if($verif) {return 1;}
+			else {return 0;}
+		}
+		";
+	}
+	return array($fonction,$ret,$lotvide);
+}//Not used
+
+
+
+function ligneaddLivraison3($nbre=1, $data=array()){
+	$ret = '';
+	$verif = '';
+	$lotvide ='';
+	$fonction ='';
+
+
+	for ($i=1; $i <= $nbre; $i++){
+		(isset($data[$i-1]['code_detlivraison'])	? $code_detlivraison 	= $data[$i-1]['code_detlivraison'] : $code_detlivraison	='');
+		(isset($data[$i-1]['monlot'])			? $monlot 		= $data[$i-1]['monlot'] 		: $monlot	='');
+		(isset($data[$i-1]['codeproduit'])		? $codeproduit 	= $data[$i-1]['codeproduit'] 	: $codeproduit	='');
+		(isset($data[$i-1]['oldcodeproduit'])		? $oldcodeproduit 	= $data[$i-1]['oldcodeproduit'] 	: $oldcodeproduit	='');
+		(isset($data[$i-1]['produit']) 			? $produit 		= $data[$i-1]['produit'] 		: $produit		='');
+		(isset($data[$i-1]['qte'])				? $qte 			= $data[$i-1]['qte'] 			: $qte			='');
+		(isset($data[$i-1]['qtelvr'])			? $qtelvr 		= $data[$i-1]['qtelvr'] 		: $qtelvr		='');
+		(isset($data[$i-1]['unite']) 			? $unite 		= $data[$i-1]['unite'] 			: $unite		='');
+		(isset($data[$i-1]['prix']) 			? $prix 		= $data[$i-1]['prix'] 			: $prix		    ='');
+		(isset($data[$i-1]['reflot']) 			? $reflot 		= $data[$i-1]['reflot'] 		: $reflot		='');
+		(isset($data[$i-1]['dateperemp']) 		? $dateperemp 	= $data[$i-1]['dateperemp'] 	: $dateperemp	='');
+
+		($prix*$qtelvr>0 ? $total=number_format($prix*$qtelvr,2,'.','') : $total = '');
+		($prix>0 ? $prix=number_format($prix,2,'.','') : $prix = '');
+		$verif .= "trimAll(document.formadd.qtelvr$i.value)=='' && ";
+		//$dateperemp = substr($dateperemp,0,strlen($dateperemp)-3 );
+		$lotvide .= "if (trimAll(document.formadd.codeproduit$i.value)!=''  && trimAll(document.formadd.reflot$i.value)=='') { msg +='- Veuillez saisir la référence du lot (ligne $i).\\n';}\n";
+		$lotvide .= "if (trimAll(document.formadd.codeproduit$i.value)!=''  && trimAll(document.formadd.dateperemp$i.value)=='') { msg +='- Veuillez saisir la date de péremption du lot (ligne $i).\\n';}\n";
+
+		$ret .= '
+		<tr align="left" valign="middle">
+            <td class="botBorderTd" nowrap>'.$i.' - </td>
+			<td class="botBorderTd"><input name="delete'.$i.'" type="button" class="button" title="Supprimer" value=" X " onClick="msgSupprLigne(\''.$codeproduit.'\','.$i.');" onblur="if(parseFloat(document.getElementById(\'qtelvr'.$i.'\').value)*parseFloat(document.getElementById(\'prix'.$i.'\').value)>0) {document.getElementById(\'total'.$i.'\').value =parseFloat(document.getElementById(\'qtelvr'.$i.'\').value)*parseFloat(document.getElementById(\'prix'.$i.'\').value)}" /></td>
+			<td class="botBorderTd"><input name="openf'.$i.'" type="button" class="button"  title="Produit" value="..." onClick="OpenWin(\'listeproduit.php?lg='.$i.'\',\'Liste\');">
+			<input name="code_detlivraison'.$i.'" type="hidden"   id="code_detlivraison'.$i.'" size="10" value="'.$code_detlivraison.'">
+			<input name="monlot'.$i.'" type="hidden"   id="monlot'.$i.'" size="10" value="'.$monlot.'"></td>
+			<td class="botBorderTd"><input name="codeproduit'.$i.'" type="text"  readonly="readonly" class="formStyleFree" id="codeproduit'.$i.'" size="10" value="'.$codeproduit.'" onblur="if(parseFloat(document.getElementById(\'qtelvr'.$i.'\').value)*parseFloat(document.getElementById(\'prix'.$i.'\').value)>0) {document.getElementById(\'total'.$i.'\').value =parseFloat(document.getElementById(\'qtelvr'.$i.'\').value)*parseFloat(document.getElementById(\'prix'.$i.'\').value)}" />
+			<input name="oldcodeproduit'.$i.'" type="hidden"   id="oldcodeproduit'.$i.'" size="10" value="'.$oldcodeproduit.'"></td>
+            <td class="botBorderTd"><input name="produit'.$i.'" type="text"  readonly="readonly" class="formStyle" id="produit'.$i.'" value="'.(stripslashes($produit)).'" onblur="if(parseFloat(document.getElementById(\'qtelvr'.$i.'\').value)*parseFloat(document.getElementById(\'prix'.$i.'\').value)>0) {document.getElementById(\'total'.$i.'\').value =parseFloat(document.getElementById(\'qtelvr'.$i.'\').value)*parseFloat(document.getElementById(\'prix'.$i.'\').value)}" /></td>
+            <td class="botBorderTd"><input name="qtelvr'.$i.'" type="text" class="formStyleFree" id="qtelvr'.$i.'" value="'.$qtelvr.'" size="10"   onblur="if(parseFloat(document.getElementById(\'qtelvr'.$i.'\').value)*parseFloat(document.getElementById(\'prix'.$i.'\').value)>0) {document.getElementById(\'total'.$i.'\').value =parseFloat(document.getElementById(\'qtelvr'.$i.'\').value)*parseFloat(document.getElementById(\'prix'.$i.'\').value)}" /></td>
+			<td class="botBorderTd"><input name="unite'.$i.'" type="text"  readonly="readonly" class="formStyleFree" id="unite'.$i.'" size="10" value="'.$unite.'">
+			<td class="botBorderTd"><input name="prix'.$i.'" type="text" class="formStyleFree" id="prix'.$i.'" value="'.$prix.'" size="10"  onblur="if(parseFloat(document.getElementById(\'qtelvr'.$i.'\').value)*parseFloat(document.getElementById(\'prix'.$i.'\').value)>0) {document.getElementById(\'total'.$i.'\').value =parseFloat(document.getElementById(\'qtelvr'.$i.'\').value)*parseFloat(document.getElementById(\'prix'.$i.'\').value)}" /></td>
+			<td class="botBorderTd"><input name="total'.$i.'" type="text" readonly="readonly" class="formStyleFree" id="total'.$i.'" value="'.$total.'" size="10" /></td>
+			<td class="botBorderTd"><input name="reflot'.$i.'" type="text" class="formStyleFree" id="reflot'.$i.'" value="'.$reflot.'" size="10" /></td>
+			<td class="botBorderTd"><input name="dateperemp'.$i.'" type="text" class="placeholder formStyleFree" id="dateperemp'.$i.'" value="'.$dateperemp.'" size="10" />
+			<input name="dispo'.$i.'" type="hidden" id="dispo'.$i.'"  value=""></td>
+
+		</tr>';
+
+	}
+	if($verif!='') {
+		$verif = substr($verif,0,strlen($verif)-3);
+		$fonction ="
+		function tousVide(){
+			if($verif) {return 1;}
+			else {return 0;}
+		}
+		";
+	}
+	return array($fonction,$ret, $lotvide);
+}
+
+
+function listeDesProduitsStockparproduit($defaut='', $whereAll){
+	//SQL
+	$whereAll1 = $whereAll;
+	(isset($defaut) ? $whereAll .= " AND PRD_LIBELLE LIKE '$defaut%'" : $whereAll .= "");
+	$sql = "SELECT * FROM  produit   ORDER BY CODE_PRODUIT  ASC;";
+
+	try {
+		$cnx = new PDO(DBD, DBUSER, DBPWD, array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8")); //Connexion to database
+	}
+	catch (PDOException $error) { //Treat error
+		//("Erreur de connexion : " . $error->getMessage() );
+		die($error->getMessage().' '.__LINE__);
+	}
+	$query =  $cnx->prepare($sql); //Prepare the SQL
+	$query->execute(); //Execute prepared SQL => $query
+
+	$list = '';
+	$i = 0; $j=1;
+	while($row = $query->fetch(PDO::FETCH_ASSOC)){
+		$in='';
+		$where='';
+		($i%2 == 0 ? $col = "tableOddRow" : $col = "tableEvenRow");
+		$sortie = QteSortieParProduit($row['CODE_PRODUIT'],$whereAll1);
+		$entree = QteEntreParProduit($row['CODE_PRODUIT'],$whereAll1);
+		$qte = $entree - $sortie;
+		(isset($qte) && $qte>0 ? $qte= $qte : $qte = '');
+
+		//if($qte <= 0) $col = "tableFINIRow";
+
+		(isset($row['PRD_PRIXVENTE']) && $row['PRD_PRIXVENTE']>0 ? $prixvente = number_format($row['PRD_PRIXVENTE'],2,',',' ') : $prixvente='');
+
+		$list .= '<tr class="'.$col.'">
+				<td align="center" valign="middle" class="text">'.$j.'- </a></td>
+				<td align="left" valign="middle" class="text">'.$row['CODE_PRODUIT'].'</a></td>
+				<td  class="text" >'.$row['PRD_LIBELLE'].'</td>
+				<td  align="right" valign="middle" class="text" >'.$qte.'</a></td>
+				<td  align="right" valign="middle" class="text" nowrap="nowrap">'.addslashes($prixvente).'</td>
+				<td align="left" valign="middle" class="text" >'.($row['ID_UNITE']).'</td>
+          </tr>';
+		$i++;
+		$j++;
+	}
+	if($list ==''){
+		$list = '
+		<tr class="tableOddRow">
+            <td height="22" align="left" valign="middle" class="text" colspan="4">Aucun article disponible ...</td>
+        </tr>';
+	}
+
+	return $list;
+}

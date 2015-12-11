@@ -1,0 +1,15 @@
+Livraison avec ou sans commande  --> OK
+
+Etat du stok pour chaque mouvement dans journal du stock (je ne vais pas comment le gérer pour le moment)
+
+Rapport dree consommation pour /prov /  --> OK
+
+Enlever le service  --> OK
+
+Pour declassement faire au niveau service et provin --> OK
+
+Logo --> OK
+
+Export bulletin trimestriel  --> OK
+
+CHAmp dans générale : CSPS --> OK

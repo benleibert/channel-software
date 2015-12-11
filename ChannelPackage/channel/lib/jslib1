@@ -1,0 +1,168 @@
+/* $Id: validation.js,v 1.5 2005/05/11 11:05:33 sureshbabu Exp $ */
+
+function trimAll(str)
+{
+        /*************************************************************
+        Input Parameter :str
+        Purpose         : remove all white spaces in front and back of string
+        Return          : str without white spaces
+        ***************************************************************/
+
+        //check for all spaces
+        var objRegExp =/^(\s*)$/;
+        if (objRegExp.test(str))
+        {
+                str = str.replace(objRegExp,'');
+                if (str.length == 0)
+                return str;
+        }
+
+        // check for leading and trailling spaces
+        objRegExp = /^(\s*)([\W\w]*)(\b\s*$)/;
+        if(objRegExp.test(str))
+        {
+                str = str.replace(objRegExp, '$2');
+        }
+        return str;
+}
+
+function isEmailId(str)
+{
+   var objRegExp  = /^[a-z0-9]([a-z0-9_\-\.]*)@([a-z0-9_\-\.]*)(\.[a-z]{2,3}(\.[a-z]{2}){0,2})$/i;
+   return objRegExp.test(str); 
+}
+
+function isPositiveInteger(str)
+{
+        /*************************************************************
+        Input Parameter :str
+        Purpose         : to check whether given str is a positive integer
+        Return          : true / false
+        ***************************************************************/
+
+	number = trimAll(str);
+    if(number=="") return false;
+	if (isNaN(number))
+	{
+		return false;
+	}
+	else
+	{
+		if (number < 0)
+		{
+			return false;
+		}
+	}
+	return true;
+}
+
+function ValidateMAC(mac){
+
+       /*************************************************************
+        Input Parameter : MAC addr string : FF-FF-FF-FF-FF-FF
+        Purpose         : 1. to check whether given str is confirm to the abv format.
+                          2. Each character is a hexa value.      
+                          3. check length is 12+5.
+        Return          : true / false
+        ***************************************************************/
+
+  if(mac.value =="") {
+      return true; 
+  }
+  //check the valid digit
+  var validchars = "0123456789ABCDEFabcdef-";
+  var seperator = "-";
+  
+  var i,cc,y,cy;
+  
+  if (mac.value.length != 17)
+  {
+        alert("Invalid MAC Address specified. Format = FF-FF-FF-FF-FF-FF");
+        mac.value = "";
+        mac.focus();
+        document.body.style.cursor = "hand";            
+        return false;  
+  }
+  
+  y = 2;
+  for (i=0; i < mac.value.length; i++) {
+    cc = mac.value.charAt(i);
+    cy = mac.value.charAt(y);
+    if (seperator.indexOf(cy) == -1)
+    {
+          alert("Invalid MAC Address specified. Format = FF-FF-FF-FF-FF-FF");
+          mac.value = "";
+          mac.focus();
+          document.body.style.cursor = "hand";          
+          return false;
+    }
+    if (validchars.indexOf(cc) != -1)
+      continue;
+    else {
+      alert("Invalid MAC Address specified. Format = FF-FF-FF-FF-FF-FF");
+      mac.value = "";
+      mac.focus();
+      document.body.style.cursor = "hand";              
+      return false;
+    }
+    y +=2;
+  }
+
+  return true;    
+}
+
+//Determine if a string is blank
+function isEmpty(str)
+{
+  if (str.search(/\S/) == -1)
+    return true
+  return false
+}
+
+//Determine, string is a number
+function isNumber(str)
+{
+  if (str.search(/^\s*\d+\s*$/) != -1) {
+    //non-zero numbers starting with 0 may be interpreted by IOS as octal.
+    //Disallow them to avoid surprises one way or the other.
+    if (str.search(/^\s*0+[1-9]/) != -1)
+      return false
+    else
+      return true
+  }
+  return false
+}
+
+//Determine, string is an oct value
+function isOctStr(str)
+{
+  if (str.search(/[^0-7]/) == -1)
+    return true
+  return false
+}
+
+//Determine, string is a hexa value
+function isHexStr(str)
+{
+  if (str.search(/[^0-9a-fA-F]/) == -1)
+    return true
+  return false
+}
+
+function isValidIP(str)
+{
+
+   if (str.search(/^(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])$/) == -1)
+            return false; 
+        
+  return true
+}
+
+//Determine, string is a hexa value
+function isASCIIStr(str)
+{
+  if (str.search(/[^0-9a-zA-Z]/) == -1)
+    return true
+  return false
+}
+
